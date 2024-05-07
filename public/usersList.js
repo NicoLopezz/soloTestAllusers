@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const userList = document.getElementById('user-list');
   
     // Llamada a la API para obtener los usuarios
-    fetch('http://localhost:10001/api/allUsers')
+    fetch('https://backend-render-bdaf.onrender.com/api/allUsers')
       .then(response => response.json())
       .then(users => {
         users.forEach(user => {
